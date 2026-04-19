@@ -1,0 +1,81 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.11.7)  16 JAN 2026 21:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**AcWing.tex
+(./AcWing.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+! Undefined control sequence.
+l.1 \section
+            {AtCoder刷题总结}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{A
+              tCoder刷题总结}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no 刷 ("5237) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 总 ("603B) in font nullfont!
+Missing character: There is no 结 ("7ED3) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no 本 ("672C) in font nullfont!
+Missing character: There is no 节 ("8282) in font nullfont!
+Missing character: There is no 中 ("4E2D) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 我 ("6211) in font nullfont!
+Missing character: There is no 将 ("5C06) in font nullfont!
+Missing character: There is no 总 ("603B) in font nullfont!
+Missing character: There is no 结 ("7ED3) in font nullfont!
+Missing character: There is no 我 ("6211) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no 上 ("4E0A) in font nullfont!
+Missing character: There is no 做 ("505A) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 经 ("7ECF) in font nullfont!
+Missing character: There is no 验 ("9A8C) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+)
+! Emergency stop.
+<*> AcWing.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 15 strings out of 474773
+ 293 string characters out of 5761289
+ 1917842 words of memory out of 5000000
+ 22269 multiletter control sequences out of 15000+600000
+ 558069 words of font info for 36 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 15i,0n,18p,67b,18s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

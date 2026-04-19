@@ -1,0 +1,1326 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.11.7)  12 DEC 2025 17:04
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**PTA.tex
+(./PTA.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+! Undefined control sequence.
+l.1 \section
+            {Codeforces 刷题总结}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{C
+              odeforces 刷题总结}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 刷 ("5237) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 总 ("603B) in font nullfont!
+Missing character: There is no 结 ("7ED3) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no 本 ("672C) in font nullfont!
+Missing character: There is no 节 ("8282) in font nullfont!
+Missing character: There is no 中 ("4E2D) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 我 ("6211) in font nullfont!
+Missing character: There is no 将 ("5C06) in font nullfont!
+Missing character: There is no 总 ("603B) in font nullfont!
+Missing character: There is no 结 ("7ED3) in font nullfont!
+Missing character: There is no 我 ("6211) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 上 ("4E0A) in font nullfont!
+Missing character: There is no 做 ("505A) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 经 ("7ECF) in font nullfont!
+Missing character: There is no 验 ("9A8C) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
+[]
+ []
+
+! Undefined control sequence.
+l.6 \subsection
+               {遇到的问题以及学到的方法}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \subsection{遇
+                 到的问题以及学到的方法}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 遇 ("9047) in font nullfont!
+Missing character: There is no 到 ("5230) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 问 ("95EE) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 以 ("4EE5) in font nullfont!
+Missing character: There is no 及 ("53CA) in font nullfont!
+Missing character: There is no 学 ("5B66) in font nullfont!
+Missing character: There is no 到 ("5230) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 方 ("65B9) in font nullfont!
+Missing character: There is no 法 ("6CD5) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+[] 
+ []
+
+! Undefined control sequence.
+l.8 ^^I\subsection
+                  {完美的一年}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ^^I\subsection{完
+                    美的一年}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 完 ("5B8C) in font nullfont!
+Missing character: There is no 美 ("7F8E) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 一 ("4E00) in font nullfont!
+Missing character: There is no 年 ("5E74) in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ^^I\item 题
+              目链接：\href{https://codeforces.com/problemset/problem/271/A}{217...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ^^I\item 题
+              目链接：\href{https://codeforces.com/problemset/problem/271/A}{217...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 ^^I\item 题
+              目链接：\href{https://codeforces.com/problemset/problem/271/A}{217...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 链 ("94FE) in font nullfont!
+Missing character: There is no 接 ("63A5) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+! Undefined control sequence.
+l.9 ^^I\item 题目链接：\href
+                       {https://codeforces.com/problemset/problem/271/A}{217...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 7 ("37) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 7 ("37) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no 点 ("70B9) in font nullfont!
+Missing character: There is no 击 ("51FB) in font nullfont!
+Missing character: There is no 此 ("6B64) in font nullfont!
+Missing character: There is no 处 ("5904) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no 方 ("65B9) in font nullfont!
+Missing character: There is no 法 ("6CD5) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no 判 ("5224) in font nullfont!
+Missing character: There is no 断 ("65AD) in font nullfont!
+Missing character: There is no 一 ("4E00) in font nullfont!
+Missing character: There is no 个 ("4E2A) in font nullfont!
+Missing character: There is no 字 ("5B57) in font nullfont!
+Missing character: There is no 符 ("7B26) in font nullfont!
+Missing character: There is no 串 ("4E32) in font nullfont!
+Missing character: There is no 是 ("662F) in font nullfont!
+Missing character: There is no 否 ("5426) in font nullfont!
+Missing character: There is no 每 ("6BCF) in font nullfont!
+Missing character: There is no 个 ("4E2A) in font nullfont!
+Missing character: There is no 字 ("5B57) in font nullfont!
+Missing character: There is no 符 ("7B26) in font nullfont!
+Missing character: There is no 均 ("5747) in font nullfont!
+Missing character: There is no 不 ("4E0D) in font nullfont!
+Missing character: There is no 相 ("76F8) in font nullfont!
+Missing character: There is no 等 ("7B49) in font nullfont!
+Missing character: There is no 时 ("65F6) in font nullfont!
+Missing character: There is no 可 ("53EF) in font nullfont!
+Missing character: There is no 以 ("4EE5) in font nullfont!
+Missing character: There is no 用 ("7528) in font nullfont!
+! Undefined control sequence.
+l.9 ...(点击此处)};方法:在判断一个字符串是否每个字符均不相等时可以用\textcolor
+                                                  {red}{set集合来去重}，\textcolor...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no 集 ("96C6) in font nullfont!
+Missing character: There is no 合 ("5408) in font nullfont!
+Missing character: There is no 来 ("6765) in font nullfont!
+Missing character: There is no 去 ("53BB) in font nullfont!
+Missing character: There is no 重 ("91CD) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+! Undefined control sequence.
+l.9 ...不相等时可以用\textcolor{red}{set集合来去重}，\textcolor
+                                                  {red}{最终比较set的长度和原字符串的长度}来...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no 最 ("6700) in font nullfont!
+Missing character: There is no 终 ("7EC8) in font nullfont!
+Missing character: There is no 比 ("6BD4) in font nullfont!
+Missing character: There is no 较 ("8F83) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 长 ("957F) in font nullfont!
+Missing character: There is no 度 ("5EA6) in font nullfont!
+Missing character: There is no 和 ("548C) in font nullfont!
+Missing character: There is no 原 ("539F) in font nullfont!
+Missing character: There is no 字 ("5B57) in font nullfont!
+Missing character: There is no 符 ("7B26) in font nullfont!
+Missing character: There is no 串 ("4E32) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 长 ("957F) in font nullfont!
+Missing character: There is no 度 ("5EA6) in font nullfont!
+Missing character: There is no 来 ("6765) in font nullfont!
+Missing character: There is no 判 ("5224) in font nullfont!
+Missing character: There is no 断 ("65AD) in font nullfont!
+Missing character: There is no 是 ("662F) in font nullfont!
+Missing character: There is no 非 ("975E) in font nullfont!
+Missing character: There is no 满 ("6EE1) in font nullfont!
+Missing character: There is no 足 ("8DB3) in font nullfont!
+Missing character: There is no 条 ("6761) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+Missing character: There is no ； ("FF1B) in font nullfont!
+Missing character: There is no 代 ("4EE3) in font nullfont!
+Missing character: There is no 码 ("7801) in font nullfont!
+Missing character: There is no 示 ("793A) in font nullfont!
+Missing character: There is no 例 ("4F8B) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ^^I\begin{lstlisting}
+                          [language=C++]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no w ("77) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 ^^I^^I^^I^^Is = to_
+                        string(num);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 19.
+! Extra }, or forgotten $.
+l.26 ^^I^^I^^I}
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.27 ^^I^^I}
+            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{itemize} on input line 7 ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ^^I\end{lstlisting}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 ^^I\end{lstlisting}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.28 ^^I\end{lstlisting}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.28 ^^I\end{lstlisting}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.29 ^^I\subsection
+                   {学校排队(与LuoguP3741类似)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 学 ("5B66) in font nullfont!
+Missing character: There is no 校 ("6821) in font nullfont!
+Missing character: There is no 排 ("6392) in font nullfont!
+Missing character: There is no 队 ("961F) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no 与 ("4E0E) in font nullfont!
+Missing character: There is no L ("4C) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no P ("50) in font nullfont!
+Missing character: There is no 3 ("33) in font nullfont!
+Missing character: There is no 7 ("37) in font nullfont!
+Missing character: There is no 4 ("34) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 类 ("7C7B) in font nullfont!
+Missing character: There is no 似 ("4F3C) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ^^I\item 题
+               目链接:\href{https://codeforces.com/problemset/problem/266/B}{26...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ^^I\item 题
+               目链接:\href{https://codeforces.com/problemset/problem/266/B}{26...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ^^I\item 题
+               目链接:\href{https://codeforces.com/problemset/problem/266/B}{26...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 链 ("94FE) in font nullfont!
+Missing character: There is no 接 ("63A5) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+! Undefined control sequence.
+l.30 ^^I\item 题目链接:\href
+                        {https://codeforces.com/problemset/problem/266/B}{26...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no B ("42) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no B ("42) in font nullfont!
+Missing character: There is no 学 ("5B66) in font nullfont!
+Missing character: There is no 校 ("6821) in font nullfont!
+Missing character: There is no 排 ("6392) in font nullfont!
+Missing character: There is no 队 ("961F) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no 点 ("70B9) in font nullfont!
+Missing character: There is no 击 ("51FB) in font nullfont!
+Missing character: There is no 此 ("6B64) in font nullfont!
+Missing character: There is no 处 ("5904) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ； ("FF1B) in font nullfont!
+Missing character: There is no 总 ("603B) in font nullfont!
+Missing character: There is no 结 ("7ED3) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+Missing character: There is no 通 ("901A) in font nullfont!
+Missing character: There is no 过 ("8FC7) in font nullfont!
+Missing character: There is no 字 ("5B57) in font nullfont!
+Missing character: There is no 符 ("7B26) in font nullfont!
+Missing character: There is no 串 ("4E32) in font nullfont!
+Missing character: There is no 交 ("4EA4) in font nullfont!
+Missing character: There is no 换 ("6362) in font nullfont!
+Missing character: There is no 来 ("6765) in font nullfont!
+Missing character: There is no 达 ("8FBE) in font nullfont!
+Missing character: There is no 到 ("5230) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 都 ("90FD) in font nullfont!
+Missing character: There is no 可 ("53EF) in font nullfont!
+Missing character: There is no 以 ("4EE5) in font nullfont!
+! Undefined control sequence.
+l.30 ...学校排队(点击此处)}；总结：通过字符串交换来达到目的的题都可以\textcolor
+                                                  {red}{用X填充思想；}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no 用 ("7528) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no 填 ("586B) in font nullfont!
+Missing character: There is no 充 ("5145) in font nullfont!
+Missing character: There is no 思 ("601D) in font nullfont!
+Missing character: There is no 想 ("60F3) in font nullfont!
+Missing character: There is no ； ("FF1B) in font nullfont!
+Missing character: There is no 代 ("4EE3) in font nullfont!
+Missing character: There is no 码 ("7801) in font nullfont!
+Missing character: There is no 示 ("793A) in font nullfont!
+Missing character: There is no 例 ("4F8B) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ^^I\begin{lstlisting}
+                          [language=C++]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no w ("77) in font nullfont!
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no B ("42) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+! Misplaced alignment tab character &.
+l.42 ^^I^^I^^I^^I^^Iif (s1[i] == 'B' &
+                                      & s1[i + 1] == 'G' && s2[i] != 'X') {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.42 ^^I^^I^^I^^I^^Iif (s1[i] == 'B' &&
+                                        s1[i + 1] == 'G' && s2[i] != 'X') {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no G ("47) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+! Misplaced alignment tab character &.
+l.42 ...I^^Iif (s1[i] == 'B' && s1[i + 1] == 'G' &
+                                                  & s2[i] != 'X') {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.42 ...^^Iif (s1[i] == 'B' && s1[i + 1] == 'G' &&
+                                                   s2[i] != 'X') {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no ! ("21) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no w ("77) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no ' ("27) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+
+! LaTeX Error: \begin{itemize} on input line 7 ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ^^I\end{lstlisting}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.53 ^^I\subsection
+                   {向上取整问题，不用ceil函数}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 向 ("5411) in font nullfont!
+Missing character: There is no 上 ("4E0A) in font nullfont!
+Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no 整 ("6574) in font nullfont!
+Missing character: There is no 问 ("95EE) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no ， ("FF0C) in font nullfont!
+Missing character: There is no 不 ("4E0D) in font nullfont!
+Missing character: There is no 用 ("7528) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no 函 ("51FD) in font nullfont!
+Missing character: There is no 数 ("6570) in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ^^I\item 题
+               目链接：\href{https://codeforces.com/contest/1328/problem/A}{629A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ^^I\item 题
+               目链接：\href{https://codeforces.com/contest/1328/problem/A}{629A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 ^^I\item 题
+               目链接：\href{https://codeforces.com/contest/1328/problem/A}{629A...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 目 ("76EE) in font nullfont!
+Missing character: There is no 链 ("94FE) in font nullfont!
+Missing character: There is no 接 ("63A5) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+! Undefined control sequence.
+l.54 ^^I\item 题目链接：\href
+                        {https://codeforces.com/contest/1328/problem/A}{629A...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h ("68) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 3 ("33) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 8 ("38) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no p ("70) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no A ("41) in font nullfont!
+Missing character: There is no 整 ("6574) in font nullfont!
+Missing character: There is no 除 ("9664) in font nullfont!
+Missing character: There is no 性 ("6027) in font nullfont!
+Missing character: There is no 问 ("95EE) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no 点 ("70B9) in font nullfont!
+Missing character: There is no 击 ("51FB) in font nullfont!
+Missing character: There is no 此 ("6B64) in font nullfont!
+Missing character: There is no 处 ("5904) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ； ("FF1B) in font nullfont!
+Missing character: There is no 代 ("4EE3) in font nullfont!
+Missing character: There is no 码 ("7801) in font nullfont!
+Missing character: There is no 示 ("793A) in font nullfont!
+Missing character: There is no 例 ("4F8B) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ^^I\begin{lstlisting}
+                          [language=C++]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no g ("67) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no C ("43) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no v ("76) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no > ("3E) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no f ("66) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no 代 ("4EE3) in font nullfont!
+Missing character: There is no 替 ("66FF) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no 函 ("51FD) in font nullfont!
+Missing character: There is no 数 ("6570) in font nullfont!
+Missing character: There is no 实 ("5B9E) in font nullfont!
+Missing character: There is no 现 ("73B0) in font nullfont!
+Missing character: There is no 向 ("5411) in font nullfont!
+Missing character: There is no 上 ("4E0A) in font nullfont!
+Missing character: There is no 取 ("53D6) in font nullfont!
+Missing character: There is no 整 ("6574) in font nullfont!
+Missing character: There is no 即 ("5373) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no / ("2F) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no * ("2A) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no - ("2D) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no < ("3C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+! Extra }, or forgotten \endgroup.
+l.68 ^^I^^I}
+            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{itemize} on input line 7 ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ^^I\end{lstlisting}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (83.49042pt too wide) in paragraph at lines 8--70
+[]\OML/cmm/m/it/10 tring\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 num\OT1/cmr/m/n/10 );
+ \OML/cmm/m/it/10 set <
+ []
+
+
+Overfull \hbox (30.71991pt too wide) in paragraph at lines 8--70
+\OML/cmm/m/it/10 char >
+ []
+
+
+Overfull \hbox (159.60065pt too wide) in paragraph at lines 8--70
+\OML/cmm/m/it/10 st\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s:begin\OT1/cmr/m/n/10 ()\
+OML/cmm/m/it/10 ; s:end\OT1/cmr/m/n/10 ()); \OML/cmm/m/it/10 if\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 s:size\OT1/cmr/m/n/10 () ==
+ []
+
+
+Overfull \hbox (185.13747pt too wide) in paragraph at lines 8--70
+\OML/cmm/m/it/10 st:size\OT1/cmr/m/n/10 ())[]\OML/cmm/m/it/10 num \OT1/cmr/m/n/
+10 +
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 8--70
+\OT1/cmr/m/n/10 +;$
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1])
+! Emergency stop.
+<*> PTA.tex
+           
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 29 strings out of 474773
+ 558 string characters out of 5761289
+ 1918842 words of memory out of 5000000
+ 22280 multiletter control sequences out of 15000+600000
+ 558077 words of font info for 37 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 22i,5n,22p,185b,112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on PTA.pdf (1 page).

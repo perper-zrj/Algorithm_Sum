@@ -1,0 +1,83 @@
+\section{Codeforces 刷题总结}
+%\textcolor{blue}{\textbf{271A}}
+%\begin{lstlisting}[language=C++]\end{lstlisting}
+在本节中，我将总结我在 Codeforces 上做题的经验。
+
+\subsection{遇到的问题以及学到的方法}
+\begin{itemize}
+	\subsection{完美的一年}
+	\item 题目链接：\href{https://codeforces.com/problemset/problem/271/A}{217A(点击此处)};方法:在判断一个字符串是否每个字符均不相等时可以用\textcolor{red}{set集合来去重}，\textcolor{red}{最终比较set的长度和原字符串的长度}来判断是非满足条件；
+	
+	代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	ll n, num;
+	cin >> n;
+	num = n + 1;
+	while (num) {
+		string s;
+		s = to_string(num);
+		set<char> st(s.begin(), s.end());
+		if (s.size() == st.size()) {
+			cout << s << endl;
+			break;
+		}
+		num++;
+	}
+}
+\end{lstlisting}
+\subsection{学校排队(与LuoguP3741类似)}
+\item 题目链接:\href{https://codeforces.com/problemset/problem/266/B}{266B学校排队(点击此处)}；总结：通过字符串交换来达到目的的题都可以\textcolor{red}{用X填充思想；}
+	
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	ll n, t;
+	cin >> n >> t;
+	string s1, s2;
+	cin >> s1;
+	s2 = s1;
+	while (t--) {
+		for (ll i = 0; i < n - 1; i++) {
+			if (s1[i] == 'B' && s1[i + 1] == 'G' && s2[i] != 'X') {
+				swap(s1[i], s1[i+1]);
+				s2[i] = 'X';
+				s2[i + 1] = 'X';
+			}
+		}
+		s2=s1;
+	}
+	cout << s1 << endl;
+}
+\end{lstlisting}
+\subsection{向上取整问题，不用ceil函数}
+\item 题目链接：\href{https://codeforces.com/contest/1328/problem/A}{629A整除性问题(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	ll a, b;
+	cin >> a >> b;
+	if (a % b == 0) {
+		cout << 0 << endl;
+	} else {
+		ll c = (a + b - 1) / b;//代替ceil函数实现向上取整即(a+b-1)/b
+		ll d = c * b;
+		cout << d - a << endl;
+	}
+}
+\end{lstlisting}
+\end{itemize}
+\newpage
+% \subsection{代码示例}
+% 下面是一个代码示例：
+
+% \begin{lstlisting}[language=C++]
+	% #include <bits/stdc++.h>
+	% using namespace std;
+	
+	% int main() {
+		%     cout << "Hello Codeforces!" << endl;
+		%     return 0;
+		% }
+	% \end{lstlisting}

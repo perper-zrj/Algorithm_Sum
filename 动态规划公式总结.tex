@@ -1,0 +1,225 @@
+\documentclass[11pt]{exam-zh}
+\usepackage{exam-zh-choices}
+\usepackage{ctex}
+\usepackage{amsmath,tikz,enumitem}
+\usetikzlibrary{arrows.meta}
+\setlist[enumerate, 1]{label=\arabic*.}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{graphicx}  % \u63d2\u5165\u56fe\u7247\u6240\u9700\u7684\u5b8f\u5305
+\usepackage{caption}   % \u53ef\u9009\uff1a\u7f8e\u5316\u56fe\u7247\u6807\u9898
+\usepackage{float}     % \u53ef\u9009\uff1a\u4f7f\u7528 [H] \u5f3a\u5236\u56fe\u7247\u56fa\u5b9a\u4f4d\u7f6e
+\usepackage{geometry}
+\geometry{a4paper, left=2cm, right=2cm, top=2.5cm, bottom=2.5cm} % 
+\everymath{\displaystyle}
+\begin{document}
+	
+	\secret
+	\title{状态依赖型\fbox{\color{red}\textbf{动态规划}}求解问题}
+	
+	%\subject{状态依赖型动态规划求解问题}
+	\maketitle
+	\fancyfoot[C]{第 \thepage\ 页 \ \ \ 共 \pageref{LastPage}\ 页}
+	
+%	\begin{notice}
+%		\item 本试卷共$4$页,满分$100$分,考试时间$1$小时$30$分钟.
+%		\item 答卷前,考生务必将自己的姓名、考生号等填写在答题卡上.
+%		\item 回答选择题时, 选出每小题答案后,用铅笔把答题卡上对应题目的答案标号涂黑.如需改动, 用橡皮擦干净后,再选涂其他答案标号.回答非选择题时, 将答案写在答题卡上.写在本试卷上无效.
+%		\item 考试结束后, 将本试卷和答题卡一并交回.
+%	\end{notice}
+\warning{\fbox{注意:此类问题不宜使用递归求解}}	
+\section{斐波那契数列问题}
+
+有一列数列，第 1 项和第 2 项为 1，从第 3 项开始，每一项都是前两项之和。请你编程输出第 $n$ 项的值。
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 50$）
+	\item 输出：第 $n$ 项的值
+\end{itemize}
+
+\begin{center}
+	\fbox{$f(1) = 1,\quad f(2) = 1,\quad f(n) = f(n-1) + f(n-2) \quad (n \geq 3)$}
+\end{center}
+
+
+\section{青蛙跳台阶问题（1阶或2阶）}
+一只青蛙要跳上 $n$ 级台阶，它每次可以跳 1 级或者 2 级。求这只青蛙有多少种跳法跳上第 $n$ 级台阶？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 45$）
+	\item 输出：跳上台阶的方法数
+\end{itemize}
+
+\begin{center}
+	\fbox{$f(1) = 1,\quad f(2) = 2,\quad f(n) = f(n-1) + f(n-2) \quad (n \geq 3)$}
+\end{center}
+
+
+\section{青蛙跳台阶问题（每次可跳 $1\sim* k$ 级）}
+一只青蛙一次可以跳 $1\sim* k$ 级台阶。现在它要跳上 $n$ 级台阶，问有多少种不同的跳法？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：两个整数 $n, k$（$1 \leq k \leq n \leq 50$）
+	\item 输出：跳上台阶的方法总数
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$f(n) = \sum_{i=1}^{k} f(n-i),\quad \text{其中 } f(0) = 1,\quad f(i) = 0 \text{(若 } i < 0\text{)}$}
+\end{center}
+
+
+\section{母牛生小牛问题（3 年成熟）}
+一个农场在第 1 年时买了一头刚出生的母牛。母牛在出生 3 年后成熟，从第 4 年开始每年生一头小牛。小牛也会从出生起第 4 年开始生小牛。假设牛不会死亡，问第 $n$ 年农场一共有多少头牛？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 50$）
+	\item 输出：第 $n$ 年的牛的总数
+\end{itemize}
+
+\begin{center}
+	\fbox{$f(1) = f(2) = f(3) = 1,\quad f(n) = f(n-1) + f(n-3) \quad (n \geq 4)$}
+\end{center}
+
+
+
+\section{兔子繁殖问题}
+一对刚出生的小兔子，从出生后第二个月起每个月生一对兔子。每对兔子都遵循这个规律。兔子不会死亡。请问第 $n$ 个月共有多少对兔子？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 50$）
+	\item 输出：第 $n$ 个月兔子的对数
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$f(1) = 1,\quad f(2) = 1,\quad f(n) = f(n-1) + f(n-2) \quad (n \geq 3)$}
+	
+\end{center}
+
+
+\section{摆放硬币问题}
+你有 $n$ 枚硬币，要将它们分层摆放，第 $i$ 层必须摆放 $i$ 枚硬币。问最多可以摆多少层？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 10^9$）
+	\item 输出：最多能摆多少层
+\end{itemize}
+
+\begin{center}
+	\fbox{$\text{求最大的 } k \text{ 满足：} \frac{k(k+1)}{2} \leq n$}
+\end{center}
+
+
+\section{铺满 $2 \times n$ 的矩形}
+给你一个 $2\times n$ 的矩形，你可以用 $2\times 1$ 的骨牌横着或竖着铺满这个矩形。问一共有多少种铺法？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 50$）
+	\item 输出：铺满的方案数
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$f(1) = 1,\quad f(2) = 2,\quad f(n) = f(n-1) + f(n-2) \quad (n \geq 3)$}
+	
+\end{center}
+
+
+\section{汉诺塔问题}
+有三个柱子和 $n$ 个大小不同的圆盘，最初所有圆盘从大到小叠在第一个柱子上。每次只能移动一个圆盘，且不能把大圆盘放在小圆盘上。请问最少需要移动多少次，才能将所有圆盘从第一个柱子移到第三个柱子？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 20$）
+	\item 输出：最少移动次数
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$f(1) = 1,\quad f(n) = 2 \cdot f(n-1) + 1 \quad (n \geq 2)$}
+	
+\end{center}
+
+
+
+
+\section{青蛙跳台阶（不能连续跳两次 2 级）}
+青蛙每次可以跳 1 或 2 级台阶，但不能连续跳两次 2 级。问跳上 $n$ 级台阶有多少种不同跳法？
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：一个整数 $n$（$1 \leq n \leq 50$）
+	\item 输出：不同跳法总数
+\end{itemize}
+
+令 $f(n,0)$ 表示当前跳的是1级，$f(n,1)$ 表示当前跳的是2级：
+\begin{center}
+	\[
+	\begin{cases}
+		f(1,0) = 1,\quad f(1,1) = 0 \\
+		f(n,0) = f(n-1,0) + f(n-1,1) \\
+		f(n,1) = f(n-2,0)
+	\end{cases}
+	\quad \Rightarrow \quad \fbox{$f(n) = f(n,0) + f(n,1)$}
+	\]
+\end{center}
+
+
+\section{泛化母牛问题（成熟期为 $k$ 年）}
+母牛出生 $k$ 年后成熟，之后每年生一头牛。所有牛都不死，也从第 $k$ 年开始生一头牛。给定一个正整数 $k$，问第 $n$ 年时一共有多少头牛。
+
+\begin{itemize}[leftmargin=2em]
+	\item 输入：两个整数 $n, k$（$1 \leq k \leq n \leq 50$）
+	\item 输出：第 $n$ 年牛的总数
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$f(1) = f(2) = \cdots = f(k) = 1,\quad f(n) = f(n-1) + f(n-k) \quad (n > k)$}
+	
+\end{center}
+
+\section{大盗阿福}
+阿福是一名经验丰富的大盗。趁着月黑风高，阿福打算今晚洗劫一条街上的店铺。
+
+这条街上一共有 $N$ 家店铺，每家店中都有一些现金。
+
+阿福事先调查得知，只有当他同时洗劫了两家相邻的店铺时，街上的报警系统才会启动，然后警察就会蜂拥而至。作为一向谨慎作案的大盗，阿福不愿意冒着被警察追捕的风险行窃。他想知道，在不惊动警察的情况下，他今晚最多可以得到多少现金?
+
+\begin{itemize}
+	\item 输入格式:	输入的第一行是一个整数 $T$，表示一共有 $T$ 组数据。接下来的每组数据，第一行是一个整数$N$ ，表示一共有$N$家店铺。第二行是$N$个被空格分开的正整数，表示每一家店铺中的现金数量每家店铺中的现金数量均不超过1000。
+	\item 输出格式:	对于每组数据，输出一行。该行包含一个整数，表示阿福在不惊动警察的情况下可以得到的现金数量。
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$dp[0] = nums[0], \quad dp[1] = max(nums[0],nums[1]), \quad dp[i] = max(dp[i -2] + nums[i], dp[i - 1])$}
+	
+\end{center}
+
+\section{最大子段和(股票最大收益问题)}
+
+给出一个长度为 $n$ 的序列 $a$，选出其中连续且非空的一段使得这段和最大。
+
+\begin{itemize}
+	
+	\item 输入格式:第一行是一个整数，表示序列的长度 $n$。第二行有 $n$ 个整数，第 $i$ 个整数表示序列的第 $i$ 个数字 $a_i$。
+	
+	\item 输出格式:输出一行一个整数表示答案。
+	
+\end{itemize}
+
+\begin{center}
+	
+	\fbox{$dp[i] = max(arr[i],dp[i - 1] + arr[i]); \quad
+		maxsum = max(maxsum,dp[i])$}
+	
+\end{center}
+
+
+
+
+
+
+\label{LastPage}
+\end{document}

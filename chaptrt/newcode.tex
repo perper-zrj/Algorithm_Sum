@@ -1,0 +1,1047 @@
+\section{newcode 刷题总结}
+%\textcolor{blue}{\textbf{271A}}
+%\begin{lstlisting}[language=C++]\end{lstlisting}
+在本节中，我将总结我在 newcode 上做题的经验。
+
+\subsection{遇到的问题以及学到的方法}
+\begin{itemize}
+\subsection{周赛119}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/122724/B}{B(点击此处)};思路：直接最大的-最小的(但是要先排序)；
+	
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve(){
+	int n;
+	cin>>n;B
+	vector<int>a(n);
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+	}
+	sort(a.begin(),a.end());
+	cout<<a.back()-a.front()<<endl;
+}
+\end{lstlisting}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/122724/C}{C(点击此处)};方法：当遇到数学问题找满足条件的数字时要学会\textcolor{red}{打表(先写一个计算机写一个简易的代码逐渐扩大范围找有没有什么规律)}；
+	
+代码示例：\\
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int l,r;
+	cin>>l>>r;
+	for(int i=l;i<=r;i++){
+		if(需要的条件){
+			cout<<i<<endl;
+		}
+	}
+}
+\end{lstlisting}
+最终发现不论在哪样大的范围里只有1和9满足条件；
+\subsection{月赛124}
+\subsubsection{B(数组重排)}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/123787/B}{B数组重排(点击此处)}总结：因为i是逐渐递增的，所以只要数组逐渐递减就可以使元素减去下标的值互不相等；
+	
+代码示例：\\
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+	
+	int T;
+	if (!(cin >> T)) return 0;
+	while (T--) {
+		int n;
+		cin >> n;
+		vector<ll> a(n);
+		for (int i = 0; i < n; ++i) cin >> a[i];
+		sort(a.begin(), a.end(), greater<ll>()); // 降序排列
+		for (int i = 0; i < n; ++i) {
+			if (i) cout << ' ';
+			cout << a[i];
+		}
+		cout << '\n';
+	}
+	return 0;
+}
+
+\end{lstlisting}
+\subsubsection{D区间查询\textcolor{red}{(求因数模板)}}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/123787/D}{D区间查询(点击此处)};
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve(){
+	cin>>a>>b>>l>>r;
+	ll d,ans=0;
+	d=b-a;
+	for(ll i=1;i*i<=d;++i){
+		if(d%i==0){
+			//因子i；
+			ll x1=b+d/i;
+			if(x1>=l&&x1<=r){
+				ans++;
+			}
+			//因子d/i(与i成对);
+			if(i*i!=d){  //避免重复
+				ll x2=b+i;
+				if(x2>=l&&x2<=r){
+					ans++;
+				}
+			}
+		}
+	}
+	cout<<ans<<endl;
+}
+\end{lstlisting}
+\subsection{周赛121}
+\subsubsection{B不想被吃掉}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/124143/B}{B不想被吃掉(点击此处)}；总结：根据贪心可知，下一天最好先把上一天剩下的先吃完，因为上一天剩下的这天之后就不能吃了。
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve(){
+	ll n,x;
+	cin>>n>>x;
+	vector<ll> v(n+1);
+	for(ll i=1;i<=n;i++){
+		cin>>v[i];
+	}
+	ll prev=0;
+	for(ll i=1;i<=n;i++){
+		ll use=min(prev,x); //先吃上一天剩下的。
+		ll need=x-use; //计算吃掉上一天的后还需要多少。
+		if(v[i]<need){
+			cout<<"No"<<endl;
+			return;
+		}
+		prev=v[i]-need;
+	}
+	cout<<"Yes"<<endl;
+}
+\end{lstlisting}
+\subsubsection{查找符合条件字串(C三妖精say subsequence )}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/124143/C}{C三妖精say subsequence}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve(){
+	ll n;
+	string s;
+	cin>>n>>s;
+	vector<ll> v(26);
+	//计算每一个字母的个数实则是看看每个字母可以放几个位置，像数学里的全排列
+	for(auto x:s){
+		v[x-'a']++;
+	}
+	ll ans=0;
+	//三个for循环的作用是保证三个字符两两不同
+	for(ll i=0;i<26;i++){
+		for(ll j=i+1;j<26;j++){
+			for(ll k=j+1;k<26;k++){
+				ans=(ans+v[i]*v[j]*v[k]*6)%MOD;//*6的意思是只有三个字符，
+			}                   //每次对选出来的三个字符全排列的个数是6
+		}
+	}
+	cout<<ans<<endl;
+}
+\end{lstlisting}
+\subsubsection{D01串大冒险}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/124143/D}{D恋恋的01串大冒险(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve(){
+	ll n,k;
+	string s;
+	cin>>n>>k>>s;
+	s=' '+s;
+	ll cur_zero=0,i=1;
+	ll cnt=0;
+	while(i<=n){
+		if(s[i]=='1'){
+			if(i<=n&&s[i]=='1'){
+				i++;
+			}
+			cur_zero=0;
+		}else{
+			cur_zero++;
+			if(cur_zero==k){
+				v[cnt++]=i-1;
+				cur_zero=0;
+			}
+			i++;
+		}
+		if(i>n){
+			v[cnt]=i-1;
+			break;
+		}
+	}
+	for(ll j=1;j<=n;j++){
+		v[j]=max(v[j],v[j-1]);
+	}
+	for(ll j=0;j<=n;j++){
+		cout<<v[j]<<" ";
+	}
+}
+\end{lstlisting}
+\subsection{周赛125}
+\subsubsection{D小苯的01合并}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/126319/D}{D小苯的01合并(点击此处)}；总结：用队列寻找字串是一个较为新颖的思想，可以学习一下。
+\textcolor{orange}{变式题在AcWing2816};
+
+代码示例：
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	ll n, m;
+	cin >> n >> m;
+	string s1, s2;
+	cin >> s1 >> s2;
+	queue<ll> q1, q2;
+	for (ll i = 0; i < n; i++) {
+		q1.emplace(s1[i] - '0');
+	}
+	for (ll i = 0; i < m; i++) {
+		q2.emplace(s2[i] - '0');
+	}
+	while (q1.size() && q2.size()) {
+		if (q1.front() == q2.front()) {
+			q1.pop();
+			q2.pop();
+		} else {
+			const ll x = q1.front();
+			q1.pop();
+			q1.front() ^= x;
+		}
+	}
+	//0和任意数异或都等于那个数，所以最后如果剩下偶数个1或者若干个0时可以消掉；
+	ll remain = 0;
+	while (q1.size()) {
+		remain ^= q1.front();
+		q1.pop();
+	}
+	if (remain == 0 && q2.size() == 0) {
+		cout << "YES" << endl;
+	} else {
+		cout << "NO" << endl;
+	}
+}
+\end{lstlisting}
+\subsection{每日一题}
+\subsubsection{12.4质数统计(筛法列质数表)}
+\item 题目链接：\href{https://www.nowcoder.com/practice/d832b0c1a0bd4394a3229f06c6f0b50b?channelPut=tracker2}{12.4质数统计(点击此处)}；用筛法先把所有质数列成一个表，然后直接查找；思想：若找到一个质数，那么就把它的倍数全部删掉；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+const int N=1e6+10;
+ll d[N];
+ll num[N];
+void solve() {
+	ll q;
+	cin >> q;
+	for (ll i = 2; i < N; ++i) {
+		if (d[i] == 1)continue;
+		num[i]++;
+		for (ll j = i + i; j < N; j += i) {
+			d[j] = 1;
+		}
+	}
+	for (ll i = 1; i < N; ++i) {
+		num[i] += num[i - 1];
+	}
+	while (q--) {
+		ll l, r, cnt = 0;
+		cin >> l >> r;
+		cnt = num[r] - num[l - 1];
+		cout << cnt << endl;
+	}
+}
+\end{lstlisting}
+\subsection{其他}
+\subsubsection{括号配对}
+\item 题目链接：\href{https://www.nowcoder.com/practice/57260c08eaa44feababd05b328b897d7?tpId=383&tqId=296645&sourceUrl=%2Fexam%2Foj%2Fta%3FtpId%3D383%26channelPut%3Dacbanner25}{noob84括号配对问题(点击此处)}；
+用栈进行；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	string s;
+	cin >> s;
+	int n = s.size();
+	stack<char> st;
+	int b = 1;
+	for (int i = 0; i < n; i++) {
+		if (s[i] == '(' || s[i] == '[') {
+			st.push(s[i]);
+		} else if (s[i] == ']') {
+			if (st.empty() || st.top() != '[') {
+				b = 0;
+				break;
+			}
+			st.pop();
+		} else if (s[i] == ')') {
+			if (st.empty() || st.top() != '(') {
+				b = 0;
+				break;
+			}
+			st.pop();
+		}
+	}
+	if (b)cout << "true" << endl;
+	else cout << "false" << endl;
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{map里面套map的用法}
+\item 题目链接：\href{https://ac.nowcoder.com/acm/contest/125954/C}{周赛123C小红出对(点击此处)}\\\textcolor{red}{下面这种遍历方法非常重要，一定要会用！！！}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	ll n;
+	cin >> n;
+	map<ll, map<char, ll> > mp;
+	for (ll i = 1; i <= n; i++) {
+		ll num;
+		char c;
+		cin >> num >> c;
+		if (mp[num].find(c) == mp[num].end()) {
+			mp[num][c] = i;
+		}
+	}
+	vector<pair<ll, ll> > v;
+	//一定要理解下面这种遍历方式和在这题中的技巧性。
+	for (auto &[num,ch]: mp) {
+		vector<ll> dis;
+		for (auto &[c,id]: ch) {
+			dis.push_back(id);
+		}
+		for (ll i = 0; i + 1 < dis.size(); i += 2) {
+			v.push_back({dis[i], dis[i + 1]});
+		}
+	}
+	cout << v.size() * 2 << endl;
+	for (auto x: v) {
+		cout << x.first << " " << x.second << endl;
+	}
+}
+\end{lstlisting}
+\subsubsection{BGN18 回文日期}
+\item 题目链接：\href{https://www.nowcoder.com/practice/0372242deac541d0b578cc6563395681?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{回文日期(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+// 月份天数表，平年情况
+int days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+// 检查日期是否合法
+bool check(int date) {
+	int year = date / 10000;
+	int month = date % 10000 / 100;
+	int day = date % 100;
+	
+	if (month == 0 || month > 12) return false;
+	if (day == 0) return false;
+	
+	// 针对 2 月处理闰年
+	if (month != 2) {
+		if (day > days[month]) return false;
+	} else {
+		bool leap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+		if (day > 28 + leap) return false;
+	}
+	return true;
+}
+
+int main() {
+	int date1, date2;
+	cin >> date1 >> date2;
+	
+	int ans = 0;
+	// 策略：枚举年份（前四位）
+	for (int i = 1000; i <= 9999; i++) {
+		// 构建回文：把 i 翻转作为后四位
+		// 例如 i = 2021, t = 1202
+		int t = i, date = i;
+		for (int j = 0; j < 4; j++) {
+			date = date * 10 + t % 10;
+			t /= 10;
+		}
+		
+		// 判断构造出的日期是否在范围内，且日期本身合法
+		if (date >= date1 && date <= date2 && check(date)) {
+			ans++;
+		}
+	}
+	
+	cout << ans << endl;
+	return 0;
+}
+\end{lstlisting}
+\textcolor{red}{总结：要是从其实日期一直遍历到终止日期太过复杂要考虑闰年还有年份天数等多种情况，所以我们就选择遍历所有年份看看对应回文串的日期和天数是否合法即可}：要多培养逆向思维！！！
+
+\subsubsection{BGN24 小红的矩阵染色}
+\item 题目链接：\href{https://www.nowcoder.com/practice/f8b771318bb04490b7389cc35e148166?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AF%2587%26topicId%3D385}{矩阵染色(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main() {
+	int n, m, k;
+	cin >> n >> m >> k;
+	vector<vector<int> > v(n, vector<int>(m));
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			char c;
+			cin >> c;
+			if (c == '*') {
+				v[i][j] = 0;
+			} else {
+				v[i][j] = 1;
+			}
+		}
+	}
+	vector<int> sum;
+	for (int j = 0; j < m; j++) {
+		int cnt = 0;
+		for (int i = 0; i < n; i++) {
+			if (v[i][j] == 1) {
+				cnt++;
+			}
+			if (v[i][j] == 0 && cnt > 0) {
+				sum.emplace_back(cnt);
+				cnt = 0;
+			}
+		}
+		//重点注意这一步一定不要遗忘。处理列末尾的情况！！！
+		if (cnt > 0)sum.emplace_back(cnt);
+	}
+	int total = 0;
+	sort(sum.begin(), sum.end(), greater<int>());
+	for (auto x: sum) {
+		if (k <= 0) break;
+		int use = min(k, x);
+		if (use > 0) {
+			total += use - 1;
+			k -= use;
+		}
+	}
+	cout << total << endl;
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{BGN26 小红背单词}
+\item 题目链接：\href{https://www.nowcoder.com/practice/b3d0fa1c43c44e0580654cb93c1bfdb9?tpId=385&tqId=10626210&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{小红背单词(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main() {
+	int n;
+	cin >> n;
+	set<string> st;
+	unordered_map<string, int> mp;
+	int cnt = 0;
+	while (n--) {
+		string s;
+		cin >> s;
+		if (st.count(s)) {
+			continue;
+		}
+		mp[s]++;
+		if (mp[s] == cnt + 1) {
+			st.insert(s);
+			cnt++;
+		}
+	}
+	cout << cnt << endl;
+}
+\end{lstlisting}
+\subsubsection{BGN28 曼哈顿距离的最大化简}
+\item 题目链接：\href{https://www.nowcoder.com/practice/6295f81acd1b4fb59c8beed92577f64b?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{最大FST距离};
+\section*{最大曼哈顿距离推导}
+
+对于平面上的两点 $(x_i, y_i)$ 和 $(x_j, y_j)$，其曼哈顿距离定义为：
+\begin{equation}
+	d(i, j) = |x_i - x_j| + |y_i - y_j|
+\end{equation}
+
+为了求得所有点对中的最大距离 $\max_{i,j} d(i, j)$，我们利用绝对值的性质 $|a| = \max(a, -a)$，将公式展开。
+注意：\texttt{aligned} 必须放在数学环境内。
+
+\begin{equation}
+	\begin{aligned}
+		|x_i - x_j| + |y_i - y_j| &= \max \{ \pm(x_i - x_j) \pm(y_i - y_j) \} \\
+		&= \max \begin{cases} 
+			(x_i - x_j) + (y_i - y_j) = (x_i + y_i) - (x_j + y_j) \\
+			(x_i - x_j) - (y_i - y_j) = (x_i - y_i) - (x_j - y_j) \\
+			-(x_i - x_j) + (y_i - y_j) = -(x_i - y_i) + (x_j - y_j) \\
+			-(x_i - x_j) - (y_i - y_j) = -(x_i + y_i) + (x_j + y_j)
+		\end{cases}
+	\end{aligned}
+\end{equation}
+
+\textcolor{red}{根据上述推导，最大距离即为:}
+\begin{equation}
+	\max_{i,j} d(i, j) = \max \left( \max_i(x_i + y_i) - \min_j(x_j + y_j), \max_i(x_i - y_i) - \min_j(x_j - y_j) \right)
+\end{equation}
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+	
+	int n;
+	if (!(cin >> n)) return 0;
+	
+	// 初始化极值为极大/极小值
+	ll s_max = -4e18, s_min = 4e18; // 4e18 是为了防止 10^9 平方后溢出
+	ll d_max = -4e18, d_min = 4e18;
+	
+	for (ll i = 1; i <= n; i++) {
+		ll a;
+		cin >> a;
+		
+		ll x = i * i;
+		ll y = a * a;
+		
+		// 计算当前点的 x+y 和 x-y
+		ll current_s = x + y;
+		ll current_d = x - y;
+		
+		// 更新四个极值
+		s_max = max(s_max, current_s);
+		s_min = min(s_min, current_s);
+		d_max = max(d_max, current_d);
+		d_min = min(d_min, current_d);
+	}
+	
+	// 曼哈顿距离最大值的经典公式
+	ll ans = max(s_max - s_min, d_max - d_min);
+	cout << ans << endl;
+	
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{字符串移动的处理}
+\item 题目链接：\href{https://www.nowcoder.com/practice/66e0054ff6b345afa47bcd4e8ceb72d7?tpId=385&tqId=11183285&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{BGN6 小红的字符串修改(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto min_pay(const char& a, const char& b) -> ll {
+	ll diff = abs(a - b);
+	return min(diff, 26 - diff);
+}
+
+int main() {
+	string s, t;
+	cin >> s >> t;
+	ll n = s.size();
+	ll m = t.size();
+	ll mmin = 1e18;
+	for (ll i = 0; i <= m - n; i++) {
+		ll curr_pay = 0;
+		for (ll j = 0; j < n; j++) {
+			curr_pay += min_pay(s[j], t[i + j]);
+		}
+		mmin = min(mmin, curr_pay);
+	}
+	cout << mmin << endl;
+	return 0;
+}
+\end{lstlisting}
+
+\item 题目链接：\href{https://www.nowcoder.com/practice/f9738786c00a40a2b7ddf6c82c1a59b1?tpId=385&tqId=10964257&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{BGN32 小红的字符串(点击此处)}；\textcolor{red}{总结：对于回文串的问题，双指针是一个很好的方法去解决这类问题。}
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto min_pay(const char& a, const char& b) -> ll {
+	ll diff = abs(a - b);
+	return min(diff, 26 - diff);
+}
+
+int main() {
+	string s;
+	cin >> s;
+	ll len = s.size();
+	ll l = 0, r = len - 1;
+	ll cnt = 0;
+	while (l <= r) {
+		if (s[l] == s[r]) {
+			l++;
+			r--;
+		} else {
+			cnt += min_pay(s[l], s[r]);
+			l++;
+			r--;
+		}
+	}
+	cout << cnt << endl;
+	return 0;
+}
+\end{lstlisting}
+\textcolor{red}{总结:对于字符串移动所需次数问题，这两个例子的min\_pay函数是对于这类题的通用解法，要理解一下}
+\subsubsection{BGN34 01序列}
+\item 题目链接：\href{https://www.nowcoder.com/practice/b0c948dbe577485598b982a430d65c39?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{01序列(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main() {
+	ll n;
+	cin >> n;
+	vector<ll> v(n);
+	for (ll i = 0; i < n; i++) {
+		cin >> v[i];
+	}
+	ll x;
+	cin >> x;
+	ll cnt = 0;
+	for (ll i = 1; i < n; i++) {
+		if (!v[i] && !v[i - 1] && !v[i + 1]) {
+			cnt++;
+			v[i]=1;
+		}
+	}
+	if (cnt >= x) {
+		cout << "true" << endl;
+	} else {
+		cout << "false" << endl;
+	}
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{字符串交换}
+\item 题目链接：\href{https://www.nowcoder.com/practice/73fd35bbfaa5483d8aa8b03cd27887a8?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3FquestionJobId%3D10%26subTabName%3Donline_coding_page}{BGN38 交换到最大(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main()
+{
+	int t; cin >> t;
+	while (t--)
+	{
+		string s; cin >> s;
+		int len = s.size();
+		for (int i = 1; i < len; i++)
+		{
+			int a = i;
+			//不限制操作次数(或者可以多次连续操作)的问题要记得考虑一下while而不是if.
+			while (a > 0 && s[a] - 1 > s[a - 1])
+			{
+				s[a]--;
+				swap(s[a], s[a - 1]);
+				a--;
+			}
+		}
+		cout << s << endl;
+	}
+	return 0;
+}
+
+\end{lstlisting}
+\subsection{数论总结}
+\subsubsection{BGN7 魔法棒}
+\item 题目链接：\href{https://www.nowcoder.com/practice/976bd95dda8f4430b512d0c39bd9f106?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AF%2587%26topicId%3D385}{魔法棒(点击此处)}；\\
+\section*{魔法棒分裂问题的数论原理分析}
+
+\subsection*{1. 核心发现：魔法操作的本质是“增量累加”}
+当我们将 1 根魔法棒分裂成 $k^2$ 根时，魔法棒总数 $n$ 的变化如下：
+\[ n_{\text{new}} = n_{\text{old}} - 1 + k^2 = n_{\text{old}} + (k^2 - 1) \]
+其中 $k \in \mathbb{Z}^+$ 且 $k \ge 1$。这意味着每次操作实质上是为总量增加了一个步长为 $k^2 - 1$ 的增量。
+
+若初始拥有 1 根魔法棒，目标是达到恰好 $x$ 根，则问题转化为：
+\textbf{是否存在一组正整数序列 $\{k_1, k_2, \dots, k_m\}$，使得：}
+\[ x - 1 = \sum_{i=1}^{m} (k_i^2 - 1) \]
+
+\subsection*{2. 基础增量的选取：为何只需考虑 3 和 8？}
+观察不同的 $k$ 取值所产生的增量集合 $S = \{k^2 - 1 \mid k \ge 2\}$：
+\begin{itemize}
+	\item 当 $k=2$ 时，增量为 $2^2 - 1 = 3$；
+	\item 当 $k=3$ 时，增量为 $3^2 - 1 = 8$；
+	\item 当 $k=4$ 时，增量为 $4^2 - 1 = 15$；
+	\item 当 $k=5$ 时，增量为 $5^2 - 1 = 24$。
+\end{itemize}
+由于 $15 = 3 \times 5$，且 $24 = 8 \times 3$，较大的增量均可由基础增量 $\{3, 8\}$ 组合而成。根据数论中的\textbf{ Frobenius Coin Problem（硬币问题）}，我们只需关注最小的互质增量组合。
+
+\subsection*{3. 数学原理：模 3 剩余系的“三条跑道”}
+为了判断 $x-1$ 能否被 $3a + 8b$（$a, b \in \mathbb{N}$）表示，我们将所有整数按 $\pmod 3$ 分类：
+
+\begin{enumerate}
+	\item \textbf{第一类：$x-1 \equiv 0 \pmod 3$} \\
+	此类数字形如 $3k$，可全部由基础增量 $3$ 凑出。\\
+	结论：只要 $x-1 \ge 0$ 且余数为 0，均可行。
+	
+	\item \textbf{第二类：$x-1 \equiv 2 \pmod 3$} \\
+	由于 $8 \equiv 2 \pmod 3$，我们可以使用一个 $8$ 来抵消余数，剩下的部分 $x-1-8$ 必为 3 的倍数。\\
+	结论：只要 $x-1 \ge 8$ 且余数为 2，均可行。
+	
+	\item \textbf{第三类：$x-1 \equiv 1 \pmod 3$} \\
+	由于 $8+8 = 16 \equiv 1 \pmod 3$，我们需要至少两个 $8$ 来抵消余数，剩下的部分 $x-1-16$ 必为 3 的倍数。\\
+	结论：只要 $x-1 \ge 16$ 且余数为 1，均可行。
+\end{enumerate}
+
+\subsection*{4. 无法构造的“黑名单”数值}
+根据上述逻辑，无法通过 $3a + 8b$ 构造的 $x-1$ 集合为：
+\begin{itemize}
+	\item 余数为 2 但小于 8 的数：$\{2, 5\}$；
+	\item 余数为 1 但小于 16 的数：$\{1, 4, 7, 10, 13\}$。
+\end{itemize}
+
+对应到目标总数 $x$（即 $(x-1) + 1$），最终的\textbf{不可达成集合（Blacklist）}为：
+\[ x \in \{2, 3, 5, 6, 8, 11, 14\} \]
+除此 7 个特例（及 $x < 1$ 的非法输入）外，所有正整数 $x$ 均输出 \texttt{Yes}。
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+using namespace std;
+
+void solve() {
+	long long x;
+	if (!(cin >> x)) return;
+	
+	if (x == 2 || x == 3 || x == 5 || x == 6 || x == 8 || x == 11 || x == 14) {
+		cout << "No" << endl;
+	} else {
+		cout << "Yes" << endl;
+	}
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	
+	int t;
+	cin >> t;
+	while (t--) {
+		solve();
+	}
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{同余性质和整除特性的应用}
+\section*{整数整除性及其数位同余原理分析}
+
+\subsection*{1. 核心理论：十进制表示的同余多项式}
+任意正整数 $n$ 均可表示为 $k+1$ 位十进制形式：
+\[ n = \sum_{i=0}^{k} a_i \cdot 10^i = a_k 10^k + a_{k-1} 10^{k-1} + \dots + a_1 10^1 + a_0 \]
+其中 $a_i \in \{0, 1, \dots, 9\}$。判断 $n$ 是否能被 $d$ 整除，本质上是考察 $n \pmod d$ 是否为 0。根据模运算性质，这取决于 $10^i \pmod d$ 的表现。
+
+\subsection*{2. 模 $3$ 与 模 $9$：弃九法的数论本质}
+由于 $10 \equiv 1 \pmod 3$ 且 $10 \equiv 1 \pmod 9$，则对于任意 $i \in \mathbb{N}$，均有 $10^i \equiv 1^i \equiv 1$。
+由此可得：
+\[ n = \sum_{i=0}^{k} a_i \cdot 10^i \equiv \sum_{i=0}^{k} a_i \cdot 1 \equiv \text{SumOfDigits}(n) \pmod{3, 9} \]
+\textbf{结论：} 一个数与其各位数字之和对 3 或 9 同余(一个数字除以 3（或 9）得到的余数，竟然和它“各位数字加起来的和”除以 3（或 9）得到的余数完全一样。)。
+
+\subsection*{3. 模 $2^p$ 与 模 $5^p$：末位截断原理}
+由于 $10 = 2 \times 5$，当除数 $d$ 为 $2^p$ 或 $5^p$ 时，对于所有 $i \ge p$，有 $10^i \equiv 0 \pmod d$。
+\begin{itemize}
+	\item \textbf{当 $p=1$ ($d=2, 5$)：} $n \equiv a_0 \pmod d$。仅需看最后一位。
+	\item \textbf{当 $p=2$ ($d=4, 25$)：} $n \equiv 10a_1 + a_0 \pmod d$。仅需看最后两位。
+	\item \textbf{当 $p=3$ ($d=8, 125$)：} $n \equiv 100a_2 + 10a_1 + a_0 \pmod d$。仅需看最后三位。
+\end{itemize}
+
+\subsection*{4. 模 $11$：奇偶位差判定法}
+由于 $10 \equiv -1 \pmod{11}$，则对于任意 $i \in \mathbb{N}$，有 $10^i \equiv (-1)^i \pmod{11}$。
+代入多项式可得：
+\[ n \equiv \sum_{i=0}^{k} a_i (-1)^i = a_0 - a_1 + a_2 - a_3 + \dots \pmod{11} \]
+\textbf{结论：} 一个数能被 11 整除，当且仅当其“偶数位之和”与“奇数位之和”的差能被 11 整除。
+
+\subsection*{5. 编程常用的数论性质归纳}
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{分类} & \textbf{数学性质 / 公式} & \textbf{编程场景} \\ \hline
+		\textbf{数根定理} & $dr(n) = 1 + ((n-1) \bmod 9)$ & $O(1)$ 处理循环数位和 \\ \hline
+		\textbf{约数对称} & $d | n \iff (n/d) | n$ & $O(\sqrt{n})$ 试除法优化 \\ \hline
+		\textbf{欧拉定理} & $a^{\phi(m)} \equiv 1 \pmod m \quad (\gcd(a,m)=1)$ & 大数幂模运算、逆元求解 \\ \hline
+		\textbf{斐波那契} & $\gcd(F_n, F_m) = F_{\gcd(n,m)}$ & 结合 GCD 求解数列性质 \\ \hline
+	\end{tabular}
+\end{table}
+
+\subsection*{6. 同余运算的“避坑”准则}
+在编程实现（如 C++）中，模运算需严格遵守：
+\begin{enumerate}
+	\item \textbf{减法处理：} 为防止出现负余数，应执行 \texttt{(a - b \% m + m) \% m}。
+	\item \textbf{除法转换：} $(a / b) \pmod m$ 必须转化为 $a \cdot \text{inv}(b) \pmod m$，其中 $\text{inv}(b)$ 为 $b$ 的模逆元。
+\end{enumerate}
+\item 题目链接:\href{https://www.nowcoder.com/practice/032c72fab5fe4a2ea8e11d40378a493d?tpId=385&tags=&title=&difficulty=0&judgeStatus=0&rp=0&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E5%25AD%25A6%25E4%25B9%25A0%25E7%25AF%2587%26topicId%3D385}{九倍平方数(点击此处)}
+
+\textcolor{red}{结论：能被 9 整除的数，其各位数字之和也能被 9 整除(3也有同样的性质)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	string n;
+	cin >> n;
+	int curr_sum = 0;
+	int count2 = 0, count3 = 0;
+	for (auto x : n) {
+		int diff = x - '0';
+		curr_sum += diff;
+		if (diff == 2)count2++;
+		if (diff == 3)count3++;
+	}
+	
+	for (int i = 0; i <= min(count2, 10); i++) {
+		for (int j = 0; j <= min(count3, 10); j++) {
+			if ((curr_sum + 2 * i + 6 * j) % 9 == 0) {
+				cout << "YES" << endl;
+				return;
+			}
+		}
+	}
+	cout << "NO" << endl;
+}
+\end{lstlisting}
+\subsubsection{环形数组连续 $k$ 项和相等的数论判定推导}
+\section*{环形数组连续 $k$ 项和相等的数论判定}
+
+\subsection*{1. 局部约束向周期性的转化}
+设环形数组为 $A_0, A_1, \dots, A_{n-1}$。给定任意连续 $k$ 个元素的和相等，对比相邻的两个 $k$ 项和：
+\[
+\sum_{j=i}^{i+k-1} A_{j \pmod n} = \sum_{j=i+1}^{i+k} A_{j \pmod n}
+\]
+消去公共项 $A_{i+1}, \dots, A_{i+k-1}$，可得：
+\[
+A_i = A_{(i+k) \pmod n}
+\]
+这表明数组具有以 $k$ 为步长的周期性。
+
+\subsection*{2. 周期组的划分}
+在长度为 $n$ 的环上以步长 $k$ 跳跃，根据群论性质，所有下标将被划分为 $d = \gcd(n, k)$ 个独立的轨道（组）。
+每组包含的元素个数为：
+\[
+L = \frac{n}{\gcd(n, k)}
+\]
+同一轨道内的所有元素必须相等。
+
+\subsection*{3. 频数限制条件}
+设数组中各不同数值出现的次数（频数）分别为 $c_1, c_2, \dots, c_m$。由于每一种数值必须填满整数个轨道，因此每个频数 $c_i$ 必须是单个轨道长度 $L$ 的倍数：
+\[
+L \mid c_i, \quad \forall i \in \{1, \dots, m\}
+\]
+这等价于 $L$ 必须整除所有频数的最大公约数。
+
+\subsection*{4. 最终判定结论：}
+若使环形数组满足连续 $k$ 项和相等，当且仅当：
+\[
+\frac{n}{\gcd(n, k)} \Bigm| \gcd(c_1, c_2, \dots, c_m)
+\]
+\item 题目链接:\href{https://www.luogu.com.cn/problem/T618226?contestId=273960}{洛谷div3 龙卷风(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+	auto solve() -> void {
+		ll n, m;
+		if (!(cin >> n >> m)) return;
+		
+		unordered_map<ll, ll> mp;
+		for (ll i = 0; i < n; i++) {
+			ll x;
+			cin >> x;
+			mp[x]++;
+		}
+		ll g = 0;
+		for (auto const& [val, freq] : mp) {
+			if (g == 0) g = freq;
+			else g =gcd(g, freq);
+		}
+		
+		ll cnt = 0;
+		for (ll k = 1; k <= m; k++) {
+			ll d = gcd(n, k);
+			ll L = n / d;
+			if (g % L == 0) {
+				cnt++;
+			}
+		}
+		cout << cnt << endl;
+	}
+\end{lstlisting}
+\subsubsection{取模或循环问题周期循环节的寻找}
+\section*{知识点详解：动态偏移下的周期性映射 (Periodic Mapping under Dynamic Offset)}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=核心逻辑]
+	当遇到“数据在数组里不动，但访问规则在转圈”的情况（如加密转盘、循环排班、复杂轨道运动），可采用以下四步法进行抽象。
+\end{tcolorbox}
+
+\subsection*{1. 物理索引与逻辑索引的解耦 (Decoupling)}
+这是处理循环数据结构的核心，旨在解决“物理存储”与“逻辑步进”之间的映射关系。
+\begin{itemize}
+	\item \textbf{物理索引 (Physical Index)：} 数据在内存或数组里的真实下标位置（固定不动）。
+	\item \textbf{逻辑索引 (Logical Index)：} 题目逻辑要求的“第 $i$ 项”。
+	\item \textbf{偏移量 (Offset)：} 逻辑上的“第 $0$ 项”对应物理上的具体下标。
+\end{itemize}
+
+\textbf{通用映射公式：}
+\[ \text{Index}_{\text{physical}} = (\text{Index}_{\text{logical}} + \text{Offset}) \pmod N \]
+\begin{itemize}
+	\item \textbf{向右循环移动 $k$ 位：} 偏移量表现为 $-k$。
+	\item \textbf{向左循环移动 $k$ 位：} 偏移量表现为 $+k$。
+\end{itemize}
+
+---
+
+\subsection*{2. 复合周期的判定 (LCM Principle)}
+当一个系统受多个相互独立的周期性变量控制时，系统的总状态周期是各分量周期的最小公倍数 (LCM)。
+在本模型中：
+\begin{itemize}
+	\item \textbf{访问位置周期：} $i \pmod n \implies T_1 = n$
+	\item \textbf{指令位移周期：} 每 $m$ 天移动一次，移动 $n$ 次回到原位 $\implies T_2 = m \times n$
+	\item \textbf{系统总周期：} $L = \text{lcm}(T_1, T_2) = \text{lcm}(n, m \cdot n) = m \cdot n$
+\end{itemize}
+在这个周期 $L$ 内，系统每天的状态序列（如位移量 $dist$）会完全重复。
+
+---
+
+\subsection*{3. 周期性模拟的“三部曲”框架}
+对于总天数 $t$ 极大的模拟题，利用周期性进行“倍增跳跃”：
+
+\textbf{第一步：计算单周期贡献} \\
+模拟一个完整周期 $L$，记录该周期内累积的总变化量 $S$：
+\[ S = \sum_{i=0}^{L-1} f(i) \pmod D \]
+
+\textbf{第二步：处理整周期跳跃} \\
+利用整数除法快速跨越大部分时间：
+\[ \Delta_{\text{full}} = (\lfloor \text{TotalDays} / L \rfloor \times S) \pmod D \]
+
+\textbf{第三步：处理剩余碎片} \\
+处理不足一个周期的部分 $R = \text{TotalDays} \pmod L$：
+\[ \text{Result} = (\Delta_{\text{full}} + \Delta_{\text{remaining}}) \pmod D \]
+
+---
+
+\subsection*{4. 易错点：负数取模的鲁棒性 (Robustness)}
+在数学上 $-1 \pmod 5 = 4$，但在 C++/Java 等编程语言中，表达式 \texttt{-1 \% 5} 的结果通常是 \texttt{-1}，直接作为数组下标会导致越界崩溃。\\
+
+\textbf{通用防错公式：}
+\[ \text{index} = (a - b \pmod n + n) \pmod n \]
+
+\textbf{变量含义解析：}
+\begin{itemize}
+	\item \textbf{$a$ (基准逻辑索引)：} 目标对象在逻辑序列中的当前位置（通常是题目要求的第 $i$ 项）。
+	\item \textbf{$b$ (动态偏移量)：} 整个坐标系相对于物理数组起始点的位移。如果系统向右转动了 $k$ 格，则偏移量通常关联这个转动数值。
+	\item \textbf{$n$ (数组总长度)：} 循环队列或轨道的总格子数，即取模的基数（Modulus）。
+\end{itemize}
+
+\textbf{逻辑拆解：}
+公式中的 \texttt{+ n} 是为了解决 $a < (b \pmod n)$ 时出现的负数情况。这相当于在数轴上向正方向预拨了一整圈，确保分子部分始终为正数，从而让 \texttt{\%} 运算符输出符合预期的物理下标 $[0, n-1]$。
+
+\item 题目链接：\href{https://www.luogu.com.cn/problem/P15359?contestId=300994}{跨年赛div3 春运(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	ll d, n, m, t;
+	cin >> d >> n >> m >> t;
+	vector<ll> v(n);
+	for (ll i = 0; i < n; i++) {
+		cin >> v[i];
+	}
+	ll L = m * n;
+	ll l = min(L, t);
+	ll cycle = 0;
+	for (ll i = 0; i < l; i++) {
+		ll count = i / m + 1;
+		ll curr_idx = i % n;
+		ll real_idx = (curr_idx - (count % n) + n) % n;
+		cycle = (cycle + v[real_idx]) % d;
+	}
+	if (t < L) {
+		cout << cycle << endl;
+	} else {
+		ll L_count = t / L;
+		ll res = t % L;
+		ll cycle_total = (L_count % d * cycle % d) % d;
+		ll res_day = 0;
+		for (ll i = 0; i < res; i++) {
+			ll count = i / m + 1;
+			ll curr_idx = i % n;
+			ll real_idx = (curr_idx - (count % n) + n) % n;
+			res_day = (res_day + v[real_idx]) % d;
+		}
+		cout << (res_day + cycle_total) % d << endl;
+	}
+}
+\end{lstlisting}
+\subsubsection{裴蜀定理}
+\section*{知识点详解：裴蜀定理}
+\begin{itemize}
+\item % 注意：itemize 环境里每一项必须以 \item 开头
+对于任意整数 $a, b$，存在整数 $x, y$ 使得：
+\[ ax + by = \gcd(a, b) \]
+
+\item 
+推广到 $n$ 个数的情况：对于序列 $A = \{A_1, A_2, \dots, A_n\}$，满足 $\sum_{i=1}^{n} A_i X_i > 0$ 的最小正整数解为：
+\[ S_{\min} = \gcd(|A_1|, |A_2|, \dots, |A_n|) \]
+\end{itemize}
+\item 题目链接：\href{https://www.luogu.com.cn/problem/P4549}{P4549 裴蜀定理(点击此处)}
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto gcd(ll a, ll b) -> ll {
+	while (b) {
+		a %= b;
+		swap(a, b);
+	}
+	return a;
+}
+
+auto solve() -> void {
+	ll n;
+	if (!(cin >> n))return;
+	vector<ll> v(n);
+	for (ll i = 0; i < n; i++) {
+		cin >> v[i];
+		if (v[i] < 0) {
+			v[i] = -v[i];
+		}
+	}
+	ll ans = 0;
+	for (ll i = 0; i < n; i++) {
+		if (i == 0) {
+			ans = v[i];
+		} else {
+			ans = gcd(ans, v[i]);
+		}
+	}
+	cout << ans << endl;
+}
+\end{lstlisting}
+\end{itemize}
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

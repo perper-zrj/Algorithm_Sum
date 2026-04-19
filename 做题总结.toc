@@ -1,0 +1,143 @@
+\contentsline {section}{\numberline {1}Codeforces 刷题总结}{7}{section.1}%
+\contentsline {subsection}{\numberline {1.1}遇到的问题以及学到的方法}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}完美的一年}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}学校排队(与LuoguP3741类似)}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}向上取整问题，不用ceil函数}{8}{subsection.1.4}%
+\contentsline {section}{\numberline {2}newcode 刷题总结}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}遇到的问题以及学到的方法}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}周赛119}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}月赛124}{10}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}B(数组重排)}{10}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}D区间查询\textcolor {red}{(求因数模板)}}{10}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}周赛121}{11}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}B不想被吃掉}{11}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}查找符合条件字串(C三妖精say subsequence )}{11}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}D01串大冒险}{12}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}周赛125}{13}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}D小苯的01合并}{13}{subsubsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.6}每日一题}{13}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}12.4质数统计(筛法列质数表)}{13}{subsubsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.7}其他}{14}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}括号配对}{14}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}map里面套map的用法}{15}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}BGN18 回文日期}{15}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}BGN24 小红的矩阵染色}{16}{subsubsection.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.7.5}BGN26 小红背单词}{17}{subsubsection.2.7.5}%
+\contentsline {subsubsection}{\numberline {2.7.6}BGN28 曼哈顿距离的最大化简}{18}{subsubsection.2.7.6}%
+\contentsline {subsubsection}{\numberline {2.7.7}字符串移动的处理}{19}{subsubsection.2.7.7}%
+\contentsline {subsubsection}{\numberline {2.7.8}BGN34 01序列}{20}{subsubsection.2.7.8}%
+\contentsline {subsubsection}{\numberline {2.7.9}字符串交换}{21}{subsubsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.8}数论总结}{22}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {2.8.1}BGN7 魔法棒}{22}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.8.2}同余性质和整除特性的应用}{24}{subsubsection.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.8.3}环形数组连续 $k$ 项和相等的数论判定推导}{26}{subsubsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.4}取模或循环问题周期循环节的寻找}{28}{subsubsection.2.8.4}%
+\contentsline {subsubsection}{\numberline {2.8.5}裴蜀定理}{31}{subsubsection.2.8.5}%
+\contentsline {section}{\numberline {3}算法学习篇(题目主要来自Luogu,但也有部分其他网站的题)}{33}{section.3}%
+\contentsline {subsection}{\numberline {3.1}遇到的问题以及学到的方法}{33}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}使用的main函数和准备工作都存在这里了}{33}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}深度优先搜索}{33}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}P11388飞跃}{33}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}递归实现排列型枚举(有顺序)}{34}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}递归实现组合型枚举(无顺序)}{35}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}递归实现指数型枚举}{35}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}指数型变式}{36}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}排列型变式}{36}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}连通块问题}{37}{subsubsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.8}P1644跳马}{39}{subsubsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.9}P2036放调料}{40}{subsubsection.3.2.9}%
+\contentsline {subsubsection}{\numberline {3.2.10}P1149火柴棒等式}{41}{subsubsection.3.2.10}%
+\contentsline {subsubsection}{\numberline {3.2.11}P1036选数}{42}{subsubsection.3.2.11}%
+\contentsline {subsubsection}{\numberline {3.2.12}P1135选和不选类(多方案选择类)}{43}{subsubsection.3.2.12}%
+\contentsline {subsubsection}{\numberline {3.2.13}P1025数的划分}{43}{subsubsection.3.2.13}%
+\contentsline {subsection}{\numberline {3.3}二分答案}{44}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}AcWing789二分模板(开区间)(点击此处)}{44}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}P2678跳石头}{45}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}P1824进击的奶牛}{45}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}B3629吃冰棍}{46}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}P1918保龄球(二分法)}{47}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}提高组二分答案(P1083)}{48}{subsubsection.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.7}P1577切绳子}{49}{subsubsection.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.8}二分进阶(newcodeF)}{50}{subsubsection.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.9}聪明的质检员}{50}{subsubsection.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.10}P5119奶牛上车}{51}{subsubsection.3.3.10}%
+\contentsline {subsubsection}{\numberline {3.3.11}P2650弹幕考察}{52}{subsubsection.3.3.11}%
+\contentsline {subsubsection}{\numberline {3.3.12}2026天梯选拔2-1}{53}{subsubsection.3.3.12}%
+\contentsline {subsection}{\numberline {3.4}分数规划}{54}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}P1570KC咖啡}{54}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}哈希表}{55}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}A+B}{55}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}A-B}{56}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}P1918保龄球(哈希表)}{56}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}哈希表解决数对问题}{57}{subsubsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.5}哈希数组(P3879)}{58}{subsubsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.6}双指针}{59}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}盛最多水的容器(LeetCode)}{59}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}接雨水(LeetCode)}{59}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}P1147连续自然数之和}{60}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}P1638逛画展}{60}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}B4006宝箱}{61}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.6}P5745区间最大和}{62}{subsubsection.3.6.6}%
+\contentsline {subsubsection}{\numberline {3.6.7}Leetcode3无重复最长子串}{62}{subsubsection.3.6.7}%
+\contentsline {subsubsection}{\numberline {3.6.8}Leetcode5最长回文子串}{63}{subsubsection.3.6.8}%
+\contentsline {subsection}{\numberline {3.7}前缀和以及差分}{63}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}前缀和模板(p8218)}{63}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}差分模板(P2367)}{64}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}前缀和解决区间重叠问题(P1047)}{65}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}P3406海底高铁}{65}{subsubsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.5}P8830(评委打分)}{66}{subsubsection.3.7.5}%
+\contentsline {subsubsection}{\numberline {3.7.6}二维前缀和模板(P2004)}{67}{subsubsection.3.7.6}%
+\contentsline {subsubsection}{\numberline {3.7.7}前缀和取模应用(abc105D)}{68}{subsubsection.3.7.7}%
+\contentsline {subsubsection}{\numberline {3.7.8}二维差分(P3397)}{68}{subsubsection.3.7.8}%
+\contentsline {subsection}{\numberline {3.8}ST表}{69}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}ST表模板题(P3865)}{70}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}ST表求最小值和最大值(综合)}{71}{subsubsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.9}动态规划}{71}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}PTA探险}{71}{subsubsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.10}字符串}{72}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}KMP算法}{72}{subsubsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.11}有关二进制的习题总结}{73}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}2026天梯选拔1-8}{73}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}2025天梯赛复赛7-5}{74}{subsubsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.3}P1062数列}{75}{subsubsection.3.11.3}%
+\contentsline {subsection}{\numberline {3.12}快速幂}{76}{subsection.3.12}%
+\contentsline {subsubsection}{\numberline {3.12.1}2026天梯赛选拔1-7}{76}{subsubsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.13}单调栈}{77}{subsection.3.13}%
+\contentsline {subsubsection}{\numberline {3.13.1}P5788单调栈模板}{77}{subsubsection.3.13.1}%
+\contentsline {subsubsection}{\numberline {3.13.2}P1318积水面积}{77}{subsubsection.3.13.2}%
+\contentsline {subsection}{\numberline {3.14}其他(Luogu题库)}{78}{subsection.3.14}%
+\contentsline {subsubsection}{\numberline {3.14.1}P3741凑VK}{78}{subsubsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.2}B3627立方根(\textcolor {red}{cbrt()函数})}{78}{subsubsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.3}P1765手机键盘}{79}{subsubsection.3.14.3}%
+\contentsline {subsubsection}{\numberline {3.14.4}P5734字符串的连接,插入,截取和查找}{79}{subsubsection.3.14.4}%
+\contentsline {subsubsection}{\numberline {3.14.5}P1957区分输入个数以及保存上次输入}{80}{subsubsection.3.14.5}%
+\contentsline {subsubsection}{\numberline {3.14.6}P1614队列实现循环}{81}{subsubsection.3.14.6}%
+\contentsline {subsubsection}{\numberline {3.14.7}P1161开关和向下取整问题}{82}{subsubsection.3.14.7}%
+\contentsline {subsubsection}{\numberline {3.14.8}\textcolor {red}{负数}的进制转换}{83}{subsubsection.3.14.8}%
+\contentsline {subsubsection}{\numberline {3.14.9}P1061循环递增字母序列}{83}{subsubsection.3.14.9}%
+\contentsline {subsubsection}{\numberline {3.14.10}字串成比例数字查找}{84}{subsubsection.3.14.10}%
+\contentsline {subsubsection}{\numberline {3.14.11}解二元一次方程组(sscanf的用法)}{84}{subsubsection.3.14.11}%
+\contentsline {subsubsection}{\numberline {3.14.12}P5250 set的用法}{87}{subsubsection.3.14.12}%
+\contentsline {subsubsection}{\numberline {3.14.13}P1056排座位}{88}{subsubsection.3.14.13}%
+\contentsline {subsubsection}{\numberline {3.14.14}P1072最大公因数(约数)和最小公倍数}{89}{subsubsection.3.14.14}%
+\contentsline {subsubsection}{\numberline {3.14.15}康托尔折线(z字形--蛇形矩阵遍历)}{90}{subsubsection.3.14.15}%
+\contentsline {subsubsection}{\numberline {3.14.16}异或和的特性及用法}{90}{subsubsection.3.14.16}%
+\contentsline {section}{\numberline {4}lanqiao刷题总结}{92}{section.4}%
+\contentsline {subsection}{\numberline {4.1}遇到的问题以及学到的方法}{92}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}最少回文子串}{92}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}合理配置}{92}{subsubsection.4.1.2}%
+\contentsline {section}{\numberline {5}PTA 刷题总结}{93}{section.5}%
+\contentsline {subsection}{\numberline {5.1}遇到的问题以及学到的方法}{93}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}对数组每一列按升序排序}{93}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}轮流问题}{94}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}结构体的使用}{94}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}固定位数问题}{95}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}字符串查找连续满足条件串的方法}{96}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}活用字符串字串提取函数(substr)}{96}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}最小化思想2026天梯选拔赛1-6}{97}{subsubsection.5.5.3}%
+\contentsline {section}{\numberline {6}AtCoder刷题总结}{99}{section.6}%
+\contentsline {subsection}{\numberline {6.1}遇到的问题以及学到的方法}{99}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}}{99}{subsection.6.2}%
+\contentsline {section}{\numberline {7}AcWing刷题总结}{100}{section.7}%
+\contentsline {subsection}{\numberline {7.1}遇到的问题以及学到的方法}{100}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}2816判断子序列}{100}{subsection.7.2}%

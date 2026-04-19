@@ -1,0 +1,276 @@
+\section{PTA 刷题总结}
+%\textcolor{blue}{\textbf{271A}}
+%\begin{lstlisting}[language=C++]\end{lstlisting}
+在本节中，我将总结我在 PTA 上做题的经验。
+
+\subsection{遇到的问题以及学到的方法}
+\begin{itemize}
+\subsection{对数组每一列按升序排序}
+\item 题目链接：\href{https://pintia.cn/problem-sets/1997490617200599040/exam/problems/type/7?problemSetProblemId=1997490617559937029}{坚固矩阵(点击此处)}；						
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	ll n, m;
+	cin >> n >> m;
+	vector<vector<ll> > v(n, vector<ll>(m));
+	for (ll i = 0; i < n; i++) {
+		for (ll j = 0; j < m; j++) {
+			cin >> v[i][j];
+		}
+	}
+	for (ll j = 0; j < m; j++) {
+		//开一个新数组来存每一列的数字，然后排序；
+		vector<ll> a;
+		for (ll i = 0; i < n; i++) {
+			a.push_back(v[i][j]);
+		}
+		sort(a.begin(), a.end());
+		//将排序好的数组在放进原数组中；
+		for (ll i = 0; i < n; i++) {
+			v[i][j] = a[i];
+		}
+	}
+	bool flag;
+	for (ll i = 0; i < n; i++) {
+		flag = true;
+		for (ll j = 0; j < m; j++) {
+			cout << (flag == true ? "" : " ") << v[i][j];
+			flag = false;
+		}
+		cout << endl;
+	}
+}
+\end{lstlisting}
+\subsection{轮流问题}
+\item 题目链接：\href{https://pintia.cn/problem-sets/1997490617200599040/exam/problems/type/7?problemSetProblemId=1997490617559937026}{小杭玩游戏(点击此处)}；总结：可以用bool来表示轮到谁了。
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+void solve() {
+	ll a,b,n,cnt=0;
+	cin>>a>>b>>n;
+	bool flag=true;
+	while(n>0){
+		ll m;
+		cnt++;
+		if(flag){
+			m=gcd(n,a);
+		}else{
+			m=gcd(n,b);
+		}
+		n-=m;
+		flag=!flag;
+	}
+	if(flag){
+		cout<<"Xiao Hong Win"<<endl;
+		cout<<cnt<<endl;
+	}else{
+		cout<<"Xiao Ming Win"<<endl;
+		cout<<cnt<<endl;
+	}
+}
+\end{lstlisting}
+\subsection{结构体的使用}
+\item 题目链接：\href{https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805071789801472&page=1}{L2-003月饼(点击此处)}；\\\textcolor{red}{总结：当要记录多个数据(两个以上)时可以用结构体来操作。}处理两个数据可以用哈希表或者其他容器操作。
+\\lambda函数也要了解一下。
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+class total {
+	public:
+	double w;
+	double v;
+	double d;
+};
+
+bool cmp(total t1, total t2) {
+	return t1.d > t2.d;
+}
+
+void solve() {
+	ll n;
+	double m;
+	cin >> n >> m;
+	vector<total> a(n);
+	for (ll i = 0; i < n; i++) {
+		cin >> a[i].w;
+	}
+	for (ll i = 0; i < n; i++) {
+		cin >> a[i].v;
+		a[i].d = a[i].v / a[i].w;
+	}
+	sort(a.begin(), a.end(), cmp);
+	//也可以写成lambda函数的形式
+	//  sort(a.begin(),a.end(),[](total &t1,total &t2){
+		//          return t1.d>t2.d;
+		//  });
+	double ans = 0;
+	for (ll i = 0; i < n && m > 0; i++) {
+		if (a[i].w <= m) {
+			ans += a[i].v;
+			m -= a[i].w;
+		} else {
+			ans += a[i].d * m;
+			m = 0;
+		}
+	}
+	cout << fixed << setprecision(2) << ans << endl;
+}
+\end{lstlisting}
+\subsection{固定位数问题}
+\item 题目链接：\href{https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=994805099426070528}{出生年(点击此处)}  总结：set去重可以检查有几个不同，for循环固定4次，就算temp=0也要继续循环，保证了始终有四位。
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+int main() {
+	int y, n;
+	cin >> y >> n;
+	for (int i = y; ; i++) {
+		set<int> st;
+		int temp = i;
+		for (int j = 0; j < 4; j++) {
+			st.insert(temp % 10);
+			temp /= 10;
+		}
+		if (st.size() == n) {
+			printf("%d %04d", i - y, i);
+			return 0;
+		}
+	}
+}
+\end{lstlisting}
+\subsubsection{字符串查找连续满足条件串的方法}
+\item 题目链接：\href{https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1111914599408664577}{L1-058 6翻了(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	string s;
+	getline(cin, s);
+	for (ll i = 0; i < s.size();) {
+		if (s[i] == '6') {
+			ll cnt = 0;
+			ll j = i;
+			//改成while循环代替之前的cnt=0和！=0的分类讨论
+			//尽量用这种思想替换掉以取的思想
+			while (j < s.size() && s[j] == '6') {
+				cnt++;
+				j++;
+			}
+			if (cnt > 9) {
+				cout << "27";
+			} else if (cnt > 3) {
+				cout << "9";
+			} else {
+				for (ll k = 0; k < cnt; k++) {
+					cout << "6";
+				}
+			}
+			i = j;
+		} else {
+			cout << s[i];
+			i++;
+		}
+	}
+}
+\end{lstlisting}
+\subsubsection{活用字符串字串提取函数(substr)}
+\item 题目链接：\href{https://pintia.cn/problem-sets/994805046380707840/exam/problems/type/7?problemSetProblemId=1111914599412858880}{L1-059 敲笨钟(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	string s;
+	getline(cin, s);
+	//要熟练的使用find和substr函数，对字符串的提取和替换都有很大的作用
+	size_t pos1 = s.find(',');
+	size_t pos2 = s.find('.');
+	bool flag = false;
+	if (pos1 >= 3 && pos2 >= 3) {
+		if (s.substr(pos1 - 3, 3) == "ong" && s.substr(pos2 - 3, 3) == "ong") {
+			flag = true;
+		}
+	}
+	if (!flag) {
+		cout << "Skipped" << endl;
+	} else {
+		ll i = s.size() - 1;
+		ll cnt = 0;
+		while (i > 0) {
+			if (s[i] == ' ') {
+				cnt++;
+			}
+			if (cnt == 3) {
+				break;
+			}
+			i--;
+		}
+		//这种输出之前也没有见过，要学习一下，不要再一个一个遍历s再存t了
+		cout << s.substr(0, i + 1) << "qiao ben zhong." << endl;
+	}
+}
+\end{lstlisting}
+\subsubsection{最小化思想2026天梯选拔赛1-6}
+\item 题目链接：\href{https://pintia.cn/problem-sets/2030339464381566976/exam/problems/type/7?problemSetProblemId=2030339464444481541}{1-6源初之石(点击此处)}；
+
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	ll n;
+	cin >> n;
+	ll a = -1, b = -1, c = -1;
+	//之所以要看i*i*i是为了找到能使三个数相乘=n的最小值(这里默认把最小值给了a)；
+	for (ll i = 2; i * i * i <= n; i++) {
+		if (n % i == 0) {
+			a = i;
+			break;
+		}
+	}
+	if (a == -1) {
+		cout << "NO" << endl;
+		return;
+	}
+	//因为前面的a已经使最小的了所以这里找c的时候可以从a+1开始找，可以提高效率。
+	for (ll i = a + 1; i * i <= n / a; i++) {
+		if ((n / a) % i == 0) {
+			c = i;
+			b = n / a / c;
+			if (b >= 2 && b != a && b != c) {
+				cout << "YES" << endl;
+				cout << a << " " << c << " " << b << endl;
+				return;
+			}
+		}
+	}
+	cout << "NO" << endl;
+}
+\end{lstlisting}
+\end{itemize}
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

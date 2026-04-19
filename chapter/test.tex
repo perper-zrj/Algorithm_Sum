@@ -1,0 +1,274 @@
+
+%摘要部分
+\begin{abstract}
+	这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段这是摘要的第一段
+	
+	这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段这是摘要的第二段
+	
+	
+	超链接:
+	
+	\url{https://baidu.com}
+	
+	\href{https://bing.com}{必应官网}
+	
+	\textbf{\color{blue}关键字:\quad 关键字1 \quad 关键字2 \quad 关键字3}
+	
+\end{abstract}
+
+
+\newpage
+
+\section{这是第一章的一级标题}
+\subsection{这是第一章的二级标题}
+\subsubsection{这是第一章的三级标题}
+
+\newpage
+
+\section{图片示例}
+\subsection{单张图片插入示例}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure/xcpclogo.png} 
+	\caption{\textbf{这是图片标题}}
+	\label{fig:test1}
+\end{figure}
+
+这是图片\ref{fig:test1}
+
+\subsection{多张图片插入示例}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{figure/xcpclogo.png} 
+		\label{fig:sample-figure-a}
+	\end{minipage}
+	\begin{minipage}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{figure/xcpclogo.png} 
+		\label{fig:sample-figure-b}
+	\end{minipage}
+	\begin{minipage}[c]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.95\textwidth]{figure/xcpclogo.png} 
+		\label{fig:sample-figure-c}
+	\end{minipage}
+	\caption{多图并排示例}
+	\label{fig:sample-figure}
+\end{figure}
+
+\newpage
+
+\section{表格相关}
+
+\begin{table}[H]
+	\caption{标准三线表格}
+	\label{tab:001} 
+	\centering
+	\begin{tabular}{cccccc}
+		\toprule[1.5pt]
+		$D$(in) & $P_u$(lbs) & $u_u$(in) & $\beta$ & $G_f$(psi.in) & $G_f$(psi.in) \\
+		\midrule[1pt]
+		5 & 269.8 & 0.000674 & 1.79 & 0.04089 & 0.04089\\
+		10 & 421.0 & 0.001035 & 3.59 & 0.04089 & 0.04089 \\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		20 & 640.2 & 0.001565 & 7.18 & 0.04089 & 0.04089\\
+		\bottomrule[1.5pt]
+	\end{tabular}
+\end{table}
+
+\newpage
+
+\section{公式}
+
+首先是行内公式，例如 $ \theta $ 是角度。行内公式使用 \verb|$  $| 包裹。
+
+行间公式不需要编号的可以使用 \verb|\[  \]| 包裹，例如
+\[
+E_1=mc^2
+\]
+其中 $ E $ 是能量，$ m $ 是质量，$ c $ 是光速。
+
+如果希望某个公式带编号，并且在后文中引用可以参考下面的写法：
+\begin{equation}
+	E=mc^2
+	\label{eq:energy}
+\end{equation}
+式\ref{eq:energy}是质能方程。
+
+
+多行公式有时候希望能够在特定的位置对齐，以下是其中一种处理方法。
+\begin{align}
+	P & = UI \\
+	& = I^2R
+\end{align}
+\verb|&| 是对齐的位置， \verb|&| 可以有多个，但是每行的个数要相同。
+
+矩阵的输入也不难。
+\[
+\mathbf{X} = \left(
+\begin{array}{cccc}
+	x_{11} & x_{12} & \ldots & x_{1n}\\
+	x_{21} & x_{22} & \ldots & x_{2n}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	x_{n1} & x_{n2} & \ldots & x_{nn}\\
+\end{array} \right)
+\]
+
+分段函数这些可以用 \verb|case| 环境，但是它要放在数学环境里面。
+\[
+f(x) =
+\begin{cases}
+	0 &  x \text{为无理数} ,\\
+	1 &  x \text{为有理数} .
+\end{cases}
+\]
+
+在数学环境里面，字体用的是数学字体，一般与正文字体不同。假如要公式里面有个别文字，则需要把这部分放在 \verb|text| 环境里面，即 \verb|\text{文本环境}| 。比如$3x+5a+\text{文字}+999$
+
+\newpage
+
+\section{杂项}
+
+\subsection{脚注}
+
+利用 \verb|\footnote{具体内容}| 可以生成脚注\footnote{脚注可以补充说明一些东西}。
+
+\subsection{无序列表与有序列表}
+
+无序列表是这样的：
+\begin{itemize}
+	\item one
+	\item two
+	\item three
+\end{itemize}
+
+有序列表是这样子的：
+\begin{enumerate}
+	\item[(1)] 1111
+	\item[(2)] 2222
+	\item[(3)] 3333
+\end{enumerate}
+
+
+1.请做出正确选项(\quad )
+\begin{choices}
+	\item 选项2选项
+	\item 选项2选项1
+	\item 选项3选项1选项1
+	\item 选项4选项1
+\end{choices}
+
+\subsection{字体加粗与斜体}
+
+如果想强调部分内容，可以使用加粗的手段来实现。加粗字体可以用 \verb|\textbf{加粗}| 来实现。例如： \textbf{这是加粗的字体。 This is bold fonts} 。
+
+中文字体没有斜体设计，但是\cite{testcite3}英文字体有。\textit{斜体 Italics}。
+
+\newpage
+
+\section{代码}
+
+\begin{lstlisting}[language=sql,caption={MySql代码}]
+-- 显示数据库
+show databases;
+-- 创建数据库
+create database if not exists game;
+-- 创建表
+create table if not exists player
+(
+id    int primary key not null auto_increment,
+name  varchar(100),
+level int,
+exp   int,
+gold  decimal(10, 2)
+);
+-- 查看表结构
+desc player;
+-- 修改行关键字的数据类型
+alter table player
+modify column name varchar(200);
+-- 修改行关键字的名称
+alter table player
+rename column name to nickname;
+\end{lstlisting}
+
+\begin{lstlisting}[language=c++,caption={C++代码测试}]
+#include<bits/stdc++.h>
+using namespace std;
+struct Student {
+	string name;
+	int score;
+};
+
+bool cmp(const Student& a, const Student& b) {
+	if (a.score != b.score) {
+		return a.score > b.score;
+	} else {
+		return a.name < b.name;
+	}
+}
+
+int main()
+{
+	int n;
+	cin >> n;
+	vector<Student> students(n);
+	for (int i = 0; i < n; ++i) {
+		cin >> students[i].name >> students[i].score;
+	}
+	sort(students.begin(), students.end(), cmp);
+	for (const auto& student : students) {
+		cout << student.name << "," << student.score << endl;
+	}
+	return 0;
+}
+\end{lstlisting}
+
+
+\newpage
+
+\section{参考文献与引用}
+
+参考文献对于一篇正式的论文来说是必不可少的，论文中重要的参考文献当然应该列出。\LaTeX{}在这方面的功能也是十分强大的，下面进介绍一个比较简单的参考文献制作方法。有兴趣的可以学习 \verb|bibtex| 或 \verb|biblatex| 的使用。
+
+这是一个引用\cite{testcite1}。这是一个简单的引用，用 \verb|\cite{bibkey}| 来完成。要引用成功，当然要维护好 bibitem 了。下面是个简单的例子。
+
+
+
+%参考文献
+\begin{thebibliography}{9}%宽度9
+	\bibitem[1]{testcite1}
+	姜振坤
+	\newblock 河北工程大学,
+	\newblock 信息与电气工程学院.
+	
+	\bibitem[2]{testcite2}
+	张三
+	\newblock 河北工程大学,
+	\newblock 信息与电气工程学院.
+	
+	\bibitem[3]{testcite3}
+	李四
+	\newblock 河北工程大学,
+	\newblock 信息与电气工程学院.
+	
+	\bibitem[4]{testcite4}
+	王五
+	\newblock 河北工程大学,
+	\newblock 信息与电气工程学院.
+	
+	\bibitem[5]{testcite5}
+	赵六
+	\newblock 河北工程大学,
+	\newblock 信息与电气工程学院.
+	
+\end{thebibliography}
+
+

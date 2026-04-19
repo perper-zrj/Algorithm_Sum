@@ -1,0 +1,162 @@
+\documentclass[12pt,UTF8]{ctexart} % 使用ctexart文档类,UTF8编码,字体大小为12pt
+
+% 中文与排版
+\usepackage{ctex}
+\usepackage{geometry}
+\geometry{a4paper, left=2cm,right=2cm,top=2cm,bottom=2cm} % 页边距设置
+\usepackage{pdfpages}
+
+% 数学与符号
+\usepackage{amsmath, amssymb, mathtools} % 数学公式与符号支持
+\everymath{\displaystyle}
+\usepackage{multicol}
+\usepackage{enumitem}
+%引用上标显示
+\usepackage{subcaption}
+
+\let\oldcite\cite
+\renewcommand{\cite}[1]{\textsuperscript{\oldcite{#1}}}
+
+
+% 定义choices环境
+\newlist{choices}{enumerate}{1}
+%\setlist[choices,1]{
+	%	label=\Alph*.,
+	%	leftmargin=2em,
+	%	itemsep=0.3em,
+	%	topsep=0.3em
+	%}
+\setlist[choices,1]{label=\Alph*., leftmargin=1.5em, itemsep=0em, before=\begin{multicols}{2}, after=\end{multicols}}
+\usepackage{multicol}
+
+
+
+% 图形与绘图
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% 列表与枚举
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=\arabic*.}
+
+% 表格
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+
+% 附录与浮动体
+\usepackage{appendix}
+\usepackage{float}
+
+% 颜色与高亮
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{orange}{RGB}{255,127,0}
+
+% 代码环境
+\usepackage{listings}
+\lstset{
+	frame=tb,
+	aboveskip=2mm,
+	belowskip=2mm,
+	showstringspaces=false,
+	columns=flexible,
+	framerule=1pt,
+	rulecolor=\color{gray!35},
+	backgroundcolor=\color{gray!5},
+	basicstyle={\footnotesize\ttfamily\baselineskip=0.9\baselineskip},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	lineskip=-1pt,
+}
+
+
+% 标题与超链接
+\usepackage[breaklinks,colorlinks,bookmarksnumbered,linkcolor=black,urlcolor=blue]{hyperref}
+
+% 段落与行距
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.625}
+
+% 目录深度设置
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\title{做题总结}
+\author{计算机专业 \\ perper}
+\date{\today}
+
+\begin{document}
+%封面cover
+\maketitle
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figure/xcpclogo.png} 
+	%\caption{\textbf{插图测试}}
+	\label{fig:logo}
+\end{figure}
+\newpage
+
+
+%插入任意的pdf文件
+%\includepdf{pdf/testpdf.pdf}
+
+
+\tableofcontents
+
+\newpage
+
+\input{chapter/Codeforces.tex}
+\input{chaptrt/newcode.tex}
+\input{chaptrt/Luogu.tex}
+\input{chaptrt/lanqiao.tex}
+\input{chaptrt/PTA.tex}
+\input{chaptrt/AtCoder.tex}
+\input{chaptrt/AcWing.tex}
+
+%\input{chapter/demo.tex}
+
+%\input{chapter/test.tex}
+
+
+
+%%基础算法
+%\input{chapter/A.tex}
+%
+%\newpage
+%
+%%搜索算法
+%\input{chapter/B.tex}
+%
+%%数据结构
+%\input{chapter/C.tex}
+%
+%%图论
+%\input{chapter/D.tex}
+%
+%%动态规划
+%\input{chapter/E.tex}
+%
+%%字符串
+%\input{chapter/F.tex}
+%
+%%数学
+%\input{chapter/G.tex}
+
+\newpage
+
+
+\end{document}

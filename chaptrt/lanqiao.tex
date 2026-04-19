@@ -1,0 +1,77 @@
+\section{lanqiao刷题总结}
+%\textcolor{blue}{\textbf{271A}}
+%\begin{lstlisting}[language=C++]\end{lstlisting}
+%\textcolor{red}{\textbf{注意：}}
+在本节中，我将总结我在 lanqiao 上做题的经验。
+
+\subsection{遇到的问题以及学到的方法}
+\begin{itemize}
+\subsubsection{最少回文子串}
+\item 题目链接:\href{https://www.lanqiao.cn/problems/21192/learning/?contest_id=274}{最少子串回文数(点击此处)};方法：1、\textcolor{red}{\textbf{回文数特点(非常重要！！！):}}最多允许一个字符出现奇数次(要么所有字符的出现次数都为偶数，要么只能有一个字符出现次数为奇数(\textcolor{blue}{\textbf{出现在中心位置}}));2、总结:若所有字符出现次数均为偶数则答案为1；否则答案是出现次数为奇数的字符的个数；
+	
+代码示例:\\
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	string s;
+	cin>>n>>s;
+	vector<int> v(26,0);
+	for(auto x:s){
+		v[x-'a']++;
+	}
+	int odd_cnt=0;
+	for(auto ch:v){
+		if(ch&1){
+			odd_cnt++;
+		}
+	}
+	if(odd_cnt==0) cout<<1<<endl;
+	else cout<<odd_cnt<<endl;
+	return 0;
+}
+\end{lstlisting}
+\subsubsection{合理配置}
+\item 题目链接 \href{https://www.lanqiao.cn/problems/21193/learning/?contest_id=274}{合理配置(点击此处)}；思路用总的袋子数-合理配置的数量=幽默配置的数量；
+	
+代码示例：\\
+\newpage
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+#define endl '\n'
+using namespace std;
+using ll=long long;
+int main(){
+	ll a,b;
+	cin>>a>>b;
+	ll ans=INT_MAX;
+	for(ll i=0;i<=min(a,b);i++){
+		ans=min(ans,abs(a+b-4*i));
+	}
+	cout<<ans<<endl;
+	return 0;
+}
+\end{lstlisting}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

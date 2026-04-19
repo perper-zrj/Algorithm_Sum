@@ -1,0 +1,43 @@
+\section{AcWing刷题总结}
+%\textcolor{blue}{\textbf{271A}}
+%\begin{lstlisting}[language=C++]\end{lstlisting}
+%\textcolor{red}{\textbf{注意：}}
+在本节中，我将总结我在 AcWing 上做题的经验。
+
+\subsection{遇到的问题以及学到的方法}
+\begin{itemize}
+\subsection{2816判断子序列}
+\item 题目链接：\href{https://www.acwing.com/problem/content/2818/}{2816判断子序列(点击此处)}；
+代码示例：\\
+\begin{lstlisting}[language=C++]
+auto solve() -> void {
+	ll n, m;
+	cin >> n >> m;
+	queue<ll> q1, q2;
+	for (ll i = 0; i < n; i++) {
+		ll a;
+		cin >> a;
+		q1.emplace(a);
+	}
+	for (ll i = 0; i < m; i++) {
+		ll b;
+		cin >> b;
+		q2.emplace(b);
+	}
+	while (q1.size() && q2.size()) {
+		if (q1.front() == q2.front()) {
+			q1.pop();
+			q2.pop();
+		} else {
+			q2.pop();
+		}
+	}
+	if (q1.size() == 0) {
+		cout << "Yes" << endl;
+	} else if (q2.size()==0){
+		cout << "No" << endl;
+	}
+}
+\end{lstlisting}
+\end{itemize}
+\newpage
